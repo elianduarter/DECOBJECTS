@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DECOBJECTS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DECOBJECTS</h1>
+      <nav class="barra">
+        <ul>
+          <li>
+            <a href="">Inicio</a>
+          </li>
+          <li>
+            <a href="#novedades">Novedades</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contactanos</a>
+          </li>
+          <li>
+            <a href="#" id="cart-icon"
+              ><i class="fa-solid fa-cart-shopping"></i>Ver carrito(<span
+                id="cart-count"
+                >0</span
+              >)</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="start">
+        <div class="contenedor">
+          <h2>
+            SI NO TE GUSTA<br />
+            DONDE ESTÁS<br />
+            ¡MUEVETE! <br />
+            NO ERES UN ARBOL
+          </h2>
+        </div>
+
+        <div class="contenedor">
+          <img src="images/oldyork.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+    <div>
+      <h2 class="new">Novedades</h2>
+    </div>
+
+    <section id="novedades">
+      <div class="card-product">
+        <img
+          src="images/decobjects/casio.jpeg"
+          alt="anillo casio"
+          class="img"
+        />
+        <h3>Anillo CASIO</h3>
+        <p class="price">$110000</p>
+        <div class="product-button">
+          <i class="fa-solid fa-heart"></i>
+          <a href="#" class="add-to-cart">Agregar al carrito</a>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img
+          src="images/decobjects/craneo.jpeg"
+          alt="lampara craneo"
+          class="img"
+        />
+        <h3>Lampara craneo</h3>
+        <p class="price">$90000</p>
+        <div class="product-button">
+          <i class="fa-solid fa-heart"></i>
+          <a href="#" class="add-to-cart">Agregar al carrito</a>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img
+          src="images/decobjects/winrar.jpeg"
+          alt="bolso winrar"
+          class="img"
+        />
+        <h3>Bolso WINRAR</h3>
+        <p class="price">$120000</p>
+        <div class="product-button">
+          <i class="fa-solid fa-heart"></i>
+          <a href="#" class="add-to-cart">Agregar al carrito</a>
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <h2 class="new">Contactanos</h2>
+    </div>
+    <section id="contact-me">
+      <div class="contenedor-contactame">
+        <div class="contenedor-contactame-inf">
+          <label for="name-user">Nombre</label>
+          <input
+            type="text"
+            name="name-user"
+            id="name-user"
+            placeholder="Nombre"
+            required
+          />
+          <label for="telefono">Telefono</label>
+          <input
+            type="text"
+            name="telefono"
+            id="telefono"
+            placeholder="Telefono"
+            required
+          />
+
+          <label for="correo">Email</label>
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="example@gmail.com"
+            required
+          />
+          <label for="comment">Mensaje</label>
+          <textarea name="comment" id="comment" rows="6"></textarea>
+          <input type="button" value="Enviar" />
+        </div>
+        <div class="contenedor-contactame-img">
+          <img src="https://i.pravatar.cc/200" alt="foto" />
+        </div>
+      </div>
+    </section>
+
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-content">
+        <span id="close-cart" class="close-cart">&times;</span>
+        <h2>Carrito de compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">total: $0</p>
+        <button id="checkout">Finalizar compra</button>
+      </div>
+    </div>
+
+    <div id="purchase-modal" class="purchase-modal">
+      <div class="purchase-content">
+        <h2>Compra finalizada</h2>
+        <p>Gracias por tu compra</p>
+        <button id="purchase-content">Cerrar</button>
+      </div>
+    </div>
+
+    <footer id="foo">
+      <em>Puedes contactarnos en</em>
+      <div class="redes">
+        <a href="https://web.facebook.com/?_rdc=1&_rdr#" target="_blank">
+          <img
+            class="img-redes"
+            src="images/logos/logo facebook.png"
+            alt="facebook"
+          />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img
+            class="img-redes"
+            src="images/logos/logo instagram.png"
+            alt="Instagram"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
